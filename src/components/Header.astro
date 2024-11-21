@@ -1,0 +1,33 @@
+<header id="header" class="bg-white shadow-md relative w-full z-50">
+	<div class="container mx-auto flex justify-between items-center p-4">
+		<a href="#home" class="text-lg font-bold">
+			<img src="/ana-logo.png" alt="Logo espacioparaeelalma" class="h-12" />
+		</a>
+		<button id="menuToggle" class="text-gray-700 focus:outline-none md:hidden">
+			<svg
+				class="h-8 w-8"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M4 6h16M4 12h16m-7 6h7"></path>
+			</svg>
+		</button>
+		<nav id="navMenu" class="hidden md:flex space-x-4">
+			<a href="#about" class="text-dark hover:text-primary">Sobre Mi</a>
+			<a href="#services" class="text-dark hover:text-primary">Servicios</a>
+			<a href="#pricing" class="text-dark hover:text-primary">Precios</a>
+			<a href="#contact" class="text-dark hover:text-primary">Contacto</a>
+		</nav>
+	</div>
+	<script>
+		document?.querySelector("#menuToggle").addEventListener("click", () => {
+			document.querySelector("#navMenu").classList.toggle("hidden");
+		});
+	</script>
+</header>
